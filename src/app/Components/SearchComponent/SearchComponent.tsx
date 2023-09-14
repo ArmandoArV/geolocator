@@ -27,7 +27,6 @@ export default function SearchComponent({
           onChange={handleInputChange}
         />
       </div>
-      {/* ... Other JSX */}
     </div>
   );
 }

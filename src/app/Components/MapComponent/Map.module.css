@@ -1,0 +1,7 @@
+/* Add this to your CSS or styling file */
+.map_container {
+  height: 30em;
+  width: 50em;
+  padding: 2em;
+  border-radius: 1em;
+}
