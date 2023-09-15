@@ -28,17 +28,15 @@ export default function Home() {
       }
       const data = await response.json();
       console.log(data);
-      // Update state with the fetched data
-      // Update state with the fetched data
-      setIP(data.ip); // IP address
-      setCity(data.city); // City
-      setRegion(data.region); // Region
-      setCountry(data.country_name || data.country); // Country (fallback to country if country_name is not available)
-      setLatitud(data.latitude); // Latitude
-      setLongitud(data.longitude); // Longitude
-      setTimezone(data.timezone); // Timezone
-      setCurrency(data.currency); // Currency
-      setHostname(data.hostname); // Hostname
+      setIP(data.ip);
+      setCity(data.city); 
+      setRegion(data.region); 
+      setCountry(data.country_name || data.country); 
+      setLatitud(data.latitude); 
+      setLongitud(data.longitude); 
+      setTimezone(data.timezone); 
+      setCurrency(data.currency);
+      setHostname(data.hostname); 
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -53,6 +51,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.outerContainer}>
+        <div className={styles.headerContainer}>
+          <h1 className={styles.title}>IP Address Tracker</h1>
+        </div>
         <div className={styles.topContainer}>
           <SearchComponent search={search} setSearch={setSearch} />
         </div>

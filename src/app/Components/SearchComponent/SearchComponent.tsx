@@ -18,6 +18,9 @@ export default function SearchComponent({
   return (
     <div className={styles.searchContainer}>
       <div className={styles.SearchContainer}>
+        <label htmlFor="searchInput" className={styles.searchLabel}>
+          IP: 
+        </label>
         <input
           type="text"
           id="searchInput"

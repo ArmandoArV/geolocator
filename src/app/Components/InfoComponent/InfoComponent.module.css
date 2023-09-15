@@ -8,14 +8,56 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-right: 1rem;
+  background-color: #e4e6e7;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #26577c;
+  width: 10rem;
 }
 
 .info {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #140202;
+}
+
+@media (max-width: 767px) {
+  .ipContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    background-color: #e4e6e7;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #26577c;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
 }
